@@ -12,6 +12,7 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
+import {WebChart} from './component/WebChart.jsx';
 
 function App() {
   return (
@@ -124,6 +125,14 @@ function App() {
         <div className="headerGreen">
           <h3 className="title text-center my-3">Progressive Web App</h3>
         </div>
+      </Row>
+      <Row className="mx-auto mb-4 cardBg"  id="pwa">
+        <div className="headerGreen">
+          <h3 className="title text-center my-3">Comparaison</h3>
+        </div>
+        <Row className="mx-auto w-75 mt-4 justify-content-center">
+          <WebChart />
+        </Row>
       </Row>
       <Row className="mx-0 conclude" id="conclude">
         <h3 className="text-white text-center my-3 title">Conclusion</h3>
