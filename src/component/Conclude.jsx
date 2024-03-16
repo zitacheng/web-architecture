@@ -27,12 +27,12 @@ export function Conclude() {
               <span className="fontChange"> architecture ?</span>
             </Card.Title>
             <Card.Text className="subBig mt-3">
-              Statique ou complexe ?<br />
+              Complexité<br />
               Traffic attendu <br />
-              Niveau de complexité <br />
-              Les délais et les budgets du proejt <br />
+              Les délais et les budgets du projet <br />
               Les besoins de sécurité <br />
               Niveau de disponibilité souhaité <br />
+              Taille de l'équipe <br />
             </Card.Text>
           </Card.Body>
         </Card>
@@ -46,7 +46,7 @@ export function Conclude() {
             {cardDisplay('Complexe et flux de donnée important', 'Microservices')}
           </Col>
           <Col md={4}>
-          {cardDisplay('Haute sécurité', 'Serverless')}
+          {cardDisplay('Haute disponibilité', 'Serverless')}
           </Col>
           <Col md={4}>
           {cardDisplay('Développement rapide', 'Monolitic')}
