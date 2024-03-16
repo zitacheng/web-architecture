@@ -3,14 +3,14 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import check from "../assets/check.svg";
 
-export function ServerCard({ serverDesc, title, id }) {
+export function ArchiCard({ serverDesc, title, id }) {
   console.log("points ", serverDesc);
   return (
-    <Row className="mx-auto cardBg mb-4 align-items-center py-4" id={id}>
+    <Row className="mx-auto cardBg mb-4 align-items-center py-4 justify-content-center w-75" id={id}>
       <div className="headerGreen">
         <h3 className="title text-center my-3">{title}</h3>
       </div>
-      <Col>
+      <Col md={5}>
         {serverDesc.data.map(function (point) {
           return (
             <p className="pointTitle" key={point.title}>
@@ -22,7 +22,7 @@ export function ServerCard({ serverDesc, title, id }) {
           );
         })}
       </Col>
-      <Col>
+      <Col md={5}>
         <Image className="serverImg" src={serverDesc.img} />
       </Col>
     </Row>

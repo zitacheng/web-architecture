@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Row from "react-bootstrap/Row";
 import {Header} from './component/Header.jsx';
 import {Home} from './component/Home.jsx';
-import {ServerCard} from './component/ServerCard.jsx';
+import {ArchiCard} from './component/ArchiCard.jsx';
 import {Comparaison} from './component/Comparaison.jsx';
+import {Conclude} from './component/Conclude.jsx';
 import { clientPoints, monoPoints, microPoints, serverlessPoints, SpaPoints, PwaPoints } from './constant/description.jsx';
 
 function App() {
@@ -12,16 +13,14 @@ function App() {
     <div className="App w-100">
       <Header />
       <Home />
-      <ServerCard serverDesc={clientPoints} title='Client Server' id={'client'} />
-      <ServerCard serverDesc={monoPoints} title='Monolithic' id={'mono'} />
-      <ServerCard serverDesc={microPoints} title='Microservice' id={'micro'} />
-      <ServerCard serverDesc={serverlessPoints} title='Serverless' id={'serverless'} />
-      <ServerCard serverDesc={SpaPoints} title='Single page application' id={'spa'} />
-      <ServerCard serverDesc={PwaPoints} title='Progressive web application' id={'pwa'} />
+      <ArchiCard serverDesc={clientPoints} title='Client Server' id={'client'} />
+      <ArchiCard serverDesc={monoPoints} title='Monolithic' id={'mono'} />
+      <ArchiCard serverDesc={microPoints} title='Microservice' id={'micro'} />
+      <ArchiCard serverDesc={serverlessPoints} title='Serverless' id={'serverless'} />
+      <ArchiCard serverDesc={SpaPoints} title='Single page application' id={'spa'} />
+      <ArchiCard serverDesc={PwaPoints} title='Progressive web application' id={'pwa'} />
       <Comparaison />
-      <Row className="mx-0 conclude" id="conclude">
-        <h3 className="text-white text-center my-3 title">Conclusion</h3>
-      </Row>
+      <Conclude />
     </div>
   );
 }

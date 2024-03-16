@@ -49,6 +49,17 @@
 .title {
   font-weight: 400;
   font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.txtClassic {
+  font-weight: 200 !important;
+  font-size: 28px !important;
+}
+
+.fontChange {
+  font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: italic;
 }
@@ -68,6 +79,11 @@
   font-weight: 200;
 }
 
+.subBig {
+  font-weight: 100;
+  font-size: 22px;
+}
+
 .desc {
   font-weight: 100;
 }
@@ -81,6 +97,64 @@
   width: 50%;
   height: auto;
 }
+
+.botCard {
+  background-color: #e2fecf !important;
+  width: 100%;
+  min-height: 50vh;
+  border-radius: 30px !important;
+  padding: 20px;
+}
+
+.cardBodygreen {
+  padding: 40px;
+}
+
+.cardEnd {
+  height: 180px;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s ease;
+}
+
+.cardEnd:hover {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  backface-visibility: hidden;
+
+  /* Just styling the text nicely */
+  line-height: 150px;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-front {
+  background-color: #071a1a;
+  z-index: 1;
+  color: white;
+  border-color: #e2fecf;
+  border-width: 1px;
+}
+
+.card-back {
+  background-color: #e2fecf;
+  transform: rotateY(180deg);
+}
+
+.cardDesc {
+  font-size: 20px;
+  font-weight: 200;
+}
+
 
 .fade-in-down {
   animation: fade-in-down 2s ease 1;
