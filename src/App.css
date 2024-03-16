@@ -42,8 +42,8 @@
 }
 
 .conclude {
-    background-color: #071a1a;
-    min-height: 80vh;
+  background-color: #071a1a;
+  min-height: 80vh;
 }
 
 .title {
@@ -59,12 +59,22 @@
   margin-right: 10px;
 }
 
+.pointTitle {
+  font-size: 26px;
+  font-weight: 300;
+}
+
 .sub {
   font-weight: 200;
 }
 
 .desc {
   font-weight: 100;
+}
+
+.serverImg{
+  width: 80%;
+  height: 80%;
 }
 
 .homeImg {
