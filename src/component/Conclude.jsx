@@ -5,12 +5,12 @@ import Row from "react-bootstrap/Row";
 export function Conclude() {
   function cardDisplay(desc, archi) {
     return(
-      <div className="cardEnd" tabIndex="0">
+      <div className="cardEnd mb-4" tabIndex="0">
           <div className="card-front">
-            <h3 className="cardDesc">{desc}</h3>
+            <h3 className="cardDesc my-auto">{desc}</h3>
           </div>
           <div class="card-back">
-            <h3 className="cardDesc">{archi}</h3>
+            <h3 className="cardDesc  my-auto">{archi}</h3>
           </div>
       </div>
     );
@@ -18,7 +18,7 @@ export function Conclude() {
 
   return (
     <Row className="mx-0 conclude justify-content-center" id="conclude">
-      <h3 className="text-white text-center mt-3 title">Conclusion</h3>
+      <h3 className="text-white text-center mt-3 title m-auto">Conclusion</h3>
       <Col md={5}>
         <Card className="botCard">
           <Card.Body className="cardBodygreen">
@@ -55,7 +55,7 @@ export function Conclude() {
           {cardDisplay("Expérience utilisateur dynamique, fluide et interactive", 'SPA')}
           </Col>
           <Col md={4}>
-          {cardDisplay("Accessibilité multiplateforme, mise à jour automatique et peu couteux ", 'PWA')}
+          {cardDisplay("Multiplateforme, mise à jour automatique et peu couteux ", 'PWA')}
           </Col>
         </Row>
       </Col>
