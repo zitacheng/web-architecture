@@ -8,25 +8,26 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 export function Home() {
+
   return (
     <Row className="mx-auto home w-75 justify-content-cente mb-4" id="home">
     <h3 className="text-white text-center title">
       Qu'est ce que c'est l'architecture web ?
     </h3>
-    <Col align="center">
-      <Image className="homeImg mx-auto fade-in-down" src={puzzle} />
+    <Col align="center" md={4} lg={3} sm={5}>
+      <Image className="homeImg mx-auto fade-in-down"  src={puzzle} />
       <p className="text-white mt-3 sub text-uppercase">Conception</p>
     </Col>
-    <Col align="center">
-      <Image className="homeImg mx-auto fade-in-down" src={layers} />
+    <Col align="center" md={4} lg={3} sm={5}>
+      <Image className="homeImg mx-auto fade-in-down"  src={layers} />
       <p className="text-white mt-3 sub text-uppercase">Organisation</p>
     </Col>
-    <Col align="center">
-      <Image className="homeImg mx-auto fade-in-down" src={database} />
+    <Col align="center" md={4} lg={3} sm={5}>
+      <Image className="homeImg mx-auto fade-in-down"  src={database} />
       <p className="text-white mt-3 sub text-uppercase">Gestion</p>
     </Col>
-    <Col align="center">
-      <Image className="homeImg mx-auto fade-in-down" src={compare} />
+    <Col align="center" md={4} lg={3} sm={5}>
+      <Image className="homeImg mx-auto fade-in-down"  src={compare} />
       <p className="text-white mt-3 sub text-uppercase">Interactions</p>
     </Col>
     <h5 className="text-white text-center title my-4">Pourquoi ?</h5>
