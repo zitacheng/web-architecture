@@ -22,7 +22,7 @@ export function ArchiCard({ serverDesc, title, id }) {
           );
         })}
       </Col>
-      <Col md={5}>
+      <Col md={6}>
         <Image className="serverImg" src={serverDesc.img} />
       </Col>
     </Row>

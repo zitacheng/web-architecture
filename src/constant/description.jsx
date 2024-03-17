@@ -1,7 +1,7 @@
 import clientServer from "../assets/clientServer.png";
 import monoArchi from "../assets/monoArchi.png";
 import microArchitect from "../assets/microArchitect.png";
-import serverless from "../assets/serverless.webp";
+import serverless from "../assets/serverless.png";
 import spa from "../assets/spa.png";
 import pwa from "../assets/PWA.png";
 

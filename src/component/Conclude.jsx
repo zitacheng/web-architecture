@@ -17,8 +17,8 @@ export function Conclude() {
   }
 
   return (
-    <Row className="mx-0 conclude justify-content-center" id="conclude">
-      <h3 className="text-white text-center mt-3 title m-auto">Conclusion</h3>
+    <Row className="mx-4 conclude justify-content-center" id="conclude">
+      <h3 className="text-white text-center mt-3 title">Conclusion</h3>
       <Col md={5}>
         <Card className="botCard">
           <Card.Body className="cardBodygreen">
