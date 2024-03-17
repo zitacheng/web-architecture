@@ -39,22 +39,22 @@ export function Conclude() {
       </Col>
       <Col>
         <Row>
-          <Col md={4}>
+          <Col md={5} lg={4} sm={6} xs={12}>
           {cardDisplay('Simple et peu de traffic', 'Client server')}
           </Col>
-          <Col md={4}>
+          <Col md={5} lg={4} sm={6} xs={12}>
             {cardDisplay('Complexe et flux de donnée important', 'Microservices')}
           </Col>
-          <Col md={4}>
+          <Col md={5} lg={4} sm={6} xs={12}>
           {cardDisplay('Haute disponibilité', 'Serverless')}
           </Col>
-          <Col md={4}>
+          <Col md={5} lg={4} sm={6} xs={12}>
           {cardDisplay('Développement rapide', 'Monolitic')}
           </Col>
-          <Col md={4}>
+          <Col md={5} lg={4} sm={6} xs={12}>
           {cardDisplay("Expérience utilisateur dynamique, fluide et interactive", 'SPA')}
           </Col>
-          <Col md={4}>
+          <Col md={5} lg={4} sm={6} xs={12}>
           {cardDisplay("Multiplateforme, mise à jour automatique et peu couteux ", 'PWA')}
           </Col>
         </Row>
